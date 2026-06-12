@@ -141,7 +141,10 @@ p { color: var(--muted); }
 .partners img:hover { filter: none; opacity: 1; transform: scale(1.04); }
 
 /* ---- cards (news/cases) ---- */
-.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; margin-top: 48px; }
+.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; margin-top: 48px; align-items: start; }
+.post-list { list-style: none; margin: 12px 0; display: grid; gap: 8px; }
+.post-list li { font-size: .92rem; color: var(--muted); }
+.post-list li strong { color: var(--ink); }
 .card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); transition: transform .2s ease, box-shadow .2s ease; display: flex; flex-direction: column; }
 .card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
 .card-media { aspect-ratio: 16/9; overflow: hidden; }
